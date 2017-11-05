@@ -11,7 +11,7 @@
 
 ## 龙芯FPGA开发介绍
 
-
+[https://github.com/xyongcn/LoongsonCsprj2017\#龙芯fpga实验板的硬件信息](https://github.com/xyongcn/LoongsonCsprj2017#龙芯fpga实验板的硬件信息 "参考链接")
 
 
 
