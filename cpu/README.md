@@ -10,7 +10,11 @@ vivado2017.1版本（鉴于安装包比较大，不在此处提供连接，同�
 
 2.解压后，在点击xsetup即可进入安装向导界面。
 
-3。
+点击next
+
+![](/assets/import.png)将所有agree勾选![](/assets/import1.png)
+
+
 
 ## 开发环境部署
 
