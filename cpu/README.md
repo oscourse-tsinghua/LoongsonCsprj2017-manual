@@ -16,15 +16,11 @@ vivado2017.1版本（鉴于安装包比较大，不在此处提供连接，同�
 
 点击所有Agree
 
-
-
 ![](/assets/import1.png)
 
 进入版本选择
 
 ![](/assets/import2.png)
-
-
 
 若选择WebPack版本，则wei完全免费版本，有一些功能的限制，但目前足够做开发发一共是15个G
 
@@ -32,15 +28,29 @@ vivado2017.1版本（鉴于安装包比较大，不在此处提供连接，同�
 
 接下来就一路默认就行
 
-
-
 若选择其他版本，则会有更全的功能，大概25个G而且需要License
 
 因为磁盘空间不足足我个人安装的是WebPack版本，若安装其他版本可以提供Licences
 
 ![](/assets/import5.png)
 
-文件在群里
+文件在群里有
+
+3.安装后遇到的问题
+
+vivado需要vc2015 redistributable packages，安装完成后第一次打开会要求安装，点击确认即可。
+
+但是如果电脑上安装有vs2017，则会出现不兼容。
+
+解决方法：
+
+![](/assets/import6.png)
+
+
+
+![](/assets/import7.png)
+
+![](/assets/import8.png)
 
 
 
