@@ -16,7 +16,7 @@ vivado2017.1版本（鉴于安装包比较大，不在此处提供连接，同�
 
 进入版本选择
 
-![](/assets/import2.png)若选择
+![](/assets/import2.png)若选择WebPack版本
 
 ## 开发环境部署
 
