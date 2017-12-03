@@ -6,6 +6,8 @@
 
 vivado2017.1版本（鉴于安装包比较大，不在此处提供连接，同学直接相互拷贝，辛成鑫U盘中有备份）
 
+### **一. windows下的安装**
+
 1.本安装包支持win7、10、Ubantu等系统（64位）。
 
 2.解压后，在点击xsetup即可进入安装向导界面。
@@ -49,6 +51,20 @@ vivado需要vc2015 redistributable packages，安装完成后第一次打开会�
 ![](/assets/import7.png)
 
 ![](/assets/import8.png)
+
+问题：
+
+打开装完后的桌面vivado图标，会弹出Microsoft visual C++2015的一个界面，提示repair或者uinstall，无论点哪个都运行不了，而且之后会有运行超时的提示。
+
+解决：
+
+这个情况是C++库的问题，下一个DiretX Repair修复一下，C++redistribution，然后重启即可。
+
+
+
+### 二. Ubantu系统下的安装
+
+
 
 ## 开发环境部署
 
