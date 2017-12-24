@@ -185,8 +185,6 @@ test文件和对应的模块即创建完成，如图![](/assets/add_source6)
 
 ![](/assets/add_simu2)
 
-
-
 ### 四.  编写代码
 
 打开test模块，编写代码实现一个简单的非门电路如下。
@@ -200,8 +198,6 @@ assign out = ~in;
 endmodule
 ```
 
-
-
 ### 五.  行为仿真（Behavioral Simulation）与Testbench
 
 为了验证代码是否正确，可以对代码进行行为仿真。我们给上面的test模块输入端in接入一个时钟信号，则输出端out就会产生一个电平相反的时钟信号。
@@ -211,8 +207,6 @@ endmodule
 如果直接修改test模块，在其中添加Testbench代码，再进行仿真，是一种不太正确的做法。因为test模块是设计文件，后面可能会直接烧写进板子。进行仿真时添加了Testbench代码，之后再烧写进板子又得删掉Testbench代码，这样容易出现错误，而且操作起来也比较麻烦。尤其是接口数量多，内部比较复杂的模块。
 
 所以我们将Testbench代码全部写到仿真文件simu中，并在simu文件中调用test模块，从而进行仿真。
-
-
 
 ### 六.  编写仿真代码
 
@@ -238,8 +232,6 @@ test mytest\(clk, out\);
 
 endmodule
 
-
-
 代码说明：
 
 reg clk = 0声明了一个reg信号，并赋初值为0。
@@ -251,8 +243,6 @@ wire out声明了一个wire信号，用于连接到test模块的输出。
 test mytest\(clk, out\)调用了前面写好的test模块，其中mytest是模块名称，这里的clk和out分别连接了mytest模块内部的in和out信号。这种写法类似于面向对象的编程语言中，对象的实例化，test为类名，而mytest为对象名称。同样，Verilog中调用模块时，可以实例化多个test对象。
 
 更多Testbench的写法请上网搜索相关资料。
-
-
 
 ### 七.  行为仿真
 
