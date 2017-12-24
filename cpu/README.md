@@ -159,11 +159,15 @@ vivado压缩包大小为20个G上下，若硬盘大小足够，可以直接在Ub
 
 ![](/assets/new project1.png)
 
-![](/assets/new project6)选择RTL Project，勾选Do not specify......（这样可以跳过添加源文件的步骤，源文件可以后面再添加）。![](/assets/new project4)根据自己的开发板选择器件型号，可以直接通过型号进行搜索，例如龙芯开发板上的芯片型号为Artx-7 AC701。如果不了解或者暂时不写进开发板，可以随便选一个型号，后面需要的时候再修改。
 
-![](/assets/new project4)
 
-![](/assets/new project5)
+选择RTL Project，勾选Do not specify......（这样可以跳过添加源文件的步骤，源文件可以后面再添加）。![](/assets/new project6)
+
+
+
+根据自己的开发板选择器件型号，可以直接通过型号进行搜索，例如龙芯开发板上的芯片型号为Artix-7 AC701。如果不了解或者暂时不写进开发板，可以随便选一个型号，后面需要的时候再修改。![](/assets/new project4)
+
+点击Finish，项目新建完成。![](/assets/new project5)
 
 ## CPU实现分析
 
