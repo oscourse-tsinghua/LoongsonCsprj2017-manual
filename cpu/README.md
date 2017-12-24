@@ -146,15 +146,15 @@ vivado压缩包大小为20个G上下，若硬盘大小足够，可以直接在Ub
 
 ### 一 . SIMULATION
 
-![](/assets/new project.png)
+1. 新建工程
 
-![](/assets/new project1.png)
+打开Vivado软件，直接在欢迎界面点击Create New Project，或在开始菜单中选择File - New Project即可新建工程。![](/assets/new project.png)点击Next![](/assets/new project1.png)
 
 ![](/assets/new project2.png)
 
 ![](/assets/new project4)
 
-
+![](/assets/new project5)
 
 ## CPU实现分析
 
