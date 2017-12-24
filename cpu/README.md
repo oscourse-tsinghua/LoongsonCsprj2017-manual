@@ -146,6 +146,14 @@ vivado压缩包大小为20个G上下，若硬盘大小足够，可以直接在Ub
 
 ### 一 . SIMULATION
 
+![](/assets/new project.png)
+
+![](/assets/new project1.png)
+
+![](/assets/new project2.png)
+
+![](/assets/new project4)
+
 
 
 ## CPU实现分析
