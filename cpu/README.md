@@ -148,9 +148,18 @@ vivado压缩包大小为20个G上下，若硬盘大小足够，可以直接在Ub
 
 1. 新建工程
 
-打开Vivado软件，直接在欢迎界面点击Create New Project，或在开始菜单中选择File - New Project即可新建工程。![](/assets/new project.png)点击Next![](/assets/new project1.png)
+打开Vivado软件，直接在欢迎界面点击Create New Project，或在开始菜单中选择File - New Project即可新建工程。
 
-![](/assets/new project2.png)
+点击Next  
+![](/assets/new project.png)
+
+
+
+输入工程名称和路径
+
+![](/assets/new project1.png)
+
+![](/assets/new project6)选择RTL Project，勾选Do not specify......（这样可以跳过添加源文件的步骤，源文件可以后面再添加）。![](/assets/new project4)根据自己的开发板选择器件型号，可以直接通过型号进行搜索，例如龙芯开发板上的芯片型号为Artx-7 AC701。如果不了解或者暂时不写进开发板，可以随便选一个型号，后面需要的时候再修改。
 
 ![](/assets/new project4)
 
