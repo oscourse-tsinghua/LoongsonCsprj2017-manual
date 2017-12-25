@@ -150,16 +150,11 @@ vivado压缩包大小为20个G上下，若硬盘大小足够，可以直接在Ub
 
 点击Next
 
-  
 ![](/assets/new project.png)
-
-
 
 输入工程名称和路径
 
 ![](/assets/new project1.png)
-
-
 
 选择RTL Project，勾选Do not specify......（这样可以跳过添加源文件的步骤，源文件可以后面再添加）
 
@@ -167,15 +162,9 @@ vivado压缩包大小为20个G上下，若硬盘大小足够，可以直接在Ub
 
 根据自己的开发板选择器件型号，可以直接通过型号进行搜索，例如龙芯开发板上的芯片型号为Artix-7 AC701。如果不了解或者暂时不写进开发板，可以随便选一个型号，后面需要的时候再修改
 
-
-
 ![](/assets/new project4)
 
-
-
 点击Finish，项目新建完成
-
-
 
 ![](/assets/new project5)
 
@@ -184,8 +173,6 @@ vivado压缩包大小为20个G上下，若硬盘大小足够，可以直接在Ub
 ### 二. 添加Verilog设计文件（Design Source）
 
 在Project Manager窗口中，选择Source子窗口，在空白处或任意文件夹上右击，选择Add Sources，或者点击上面的绿色加号图标
-
-
 
 ![](/assets/add_source1)
 
@@ -265,8 +252,6 @@ test mytest\(clk, out\)调用了前面写好的test模块，其中mytest是模�
 ### 七.  行为仿真
 
 右击simu模块，选择Set as Top，将simu模块设置为仿真时的顶层模块。顶层模块类似于C编程时的入口函数，即main函数。main\`函数可以调用其他子函数；类似的，顶层模块可以调用其他模块。![](/assets/simu1)
-
-
 
 在Flow Navigator窗口中点击Run Simulation - Run Behavioral Simulation；或者在菜单中选择Flow - Run Simulation - Run Behavioral Simulation，即可启动行为仿真。![](/assets/simu2)
 
