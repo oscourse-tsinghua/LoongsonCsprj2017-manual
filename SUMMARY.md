@@ -5,5 +5,5 @@
 * [MIPS32S CPU上的ucore教学操作系统](ucore/README.md)
 * [MIPS32S上的C0编译器实验](compiler/README.md)
 * [系统集成](integration/README.md)
-* [龙芯试验箱介绍](long-xin-shi-yan-xiang-jie-shao.md)
+* [龙芯实验箱](long-xin-shi-yan-xiang-jie-shao.md)
 
