@@ -1,7 +1,3 @@
-# GNU make
-
-[文档](https://www.gnu.org/software/make/manual/html_node/index.html)
-
 # Target triplet （目标三元组）
 
 在准备交叉编译工具链时，需要确定目标机器的架构、环境，才能选择出合适的工具链配置。工具链的配置以Target triplet表示。其基本格式为：

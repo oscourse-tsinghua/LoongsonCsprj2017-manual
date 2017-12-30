@@ -6,6 +6,7 @@
 
 在ucore的开发与调试中，使用GNU工具链，包括GNU make, GNU Binutils, GCC以及GDB。
 
+[GNU make](make.md)
 [交叉编译工具链](crosstools.md)
 
 ## qemu模拟器介绍
