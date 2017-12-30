@@ -39,77 +39,106 @@ machine-vendor-os
 |objdump|可以查看目标文件内容、进行反汇编等|
 |objcopy|可以复制、修改目标文件|
 
-使用交叉编译的工具链时，需要在命令前附加目标的Target triplet，例如，要使用`mips-linux-gnu`的`as`，应该使用的命令为`mips-linux-gnu-as`。
+使用交叉编译工具链时，需要在命令前附加目标的Target triplet，例如，要使用`mips-linux-gnu`的`as`，应该使用的命令为`mips-linux-gnu-as`。
 
 ## ld
 
 GNU连接器，可以根据[连接器脚本](https://sourceware.org/binutils/docs/ld/Scripts.html#Scripts)进行连接。[文档](https://sourceware.org/binutils/docs/ld/)
 
-* ld连接多个目标文件。作为参数的目标文件的先后顺序对连接结果有影响。
-* 以动态库（.so）作为输入时，ld只能生成部分连接的输出。
+* `ld`连接多个目标文件。作为参数的目标文件的先后顺序对连接结果有影响。
+* 需要生成静态文件时，输入只能包括静态库（`.a`）或目标文件（`.o`)。
 
-格式：ld \[选项\] 目标文件
+格式：`ld [选项] 目标文件`
 
 常用选项：
 
-* -o \<文件\> 设置输出文件
-* -L \<目录\> 设置库搜索路径
-* -l \<库名\> 在库搜索路径中寻找对应的库并加入链接
-* -T \<脚本\> 使用自定义连接器脚本
+* `-o <文件>` 设置输出文件
+* `-L <目录>` 设置库搜索路径
+* `-l <库名>` 在库搜索路径中寻找对应的库并加入链接
+* `-T <脚本>` 使用自定义连接器脚本
 
 ## as
 
 GNU汇编器，根据汇编程序产生目标文件。[文档](https://sourceware.org/binutils/docs/as/)
 
-* as需要不含预处理的汇编程序（一般以.s作为文件名结尾）。如果需要进行预处理（文件名以.S结尾），可以使用gcc汇编或自行调用cpp预处理。
+* `as`需要不含预处理的汇编程序（一般以`.s`作为文件名结尾）。如果需要进行预处理（文件名以`.S`结尾），可以使用`gcc`汇编或自行调用`cpp`预处理。
 * 不同架构的汇编语言有不同的语法。
 
-格式：as \[选项\] \[文件\]
+格式：`as [选项] [文件]`
 当不指定输入文件时，as从标准输入读入源程序。
 
 常用选项：
 
-* -o \<文件\> 设置输出文件
+* -o <文件> 设置输出文件
 
 ## objdump
 
 显示目标文件信息。[文档](https://sourceware.org/binutils/docs/binutils/objdump.html)
 
-格式：objdump \[选项\] \[文件\]
-当不制定输入文件时，默认使用a.out。
+格式：`objdump [选项] [文件]`
+
+当不制定输入文件时，默认使用`a.out`。
 
 常用选项：
 
-* -h 查看Section headers。列出目标文件内所有段的信息。
-* -t 查看符号表。
-* -x 查看所有区块信息。相当于`-a -f -h -p -r -t`（Archive信息、文件头、Section headers、文件格式特有的信息、重定位信息、符号表）。
-* -d 反汇编所有可执行段。该操作会产生相当多的输出，一般应将输出重定向到文件或编辑器。
-* -j 限定仅处理某个段。
-* -s 输出段的内容。一般与`-j`连用。
+* `-h` 查看Section headers。列出目标文件内所有段的信息。
+* `-t` 查看符号表。
+* `-x` 查看所有区块信息。相当于`-a -f -h -p -r -t`（Archive信息、文件头、Section headers、文件格式特有的信息、重定位信息、符号表）。
+* `-d` 反汇编所有可执行段。该操作会产生相当多的输出，一般应将输出重定向到文件或编辑器。
+* `-j` 限定仅处理某个段。
+* `-s` 输出段的内容。一般与`-j`连用。
 
 ## objcopy
 
 修改目标文件。[文档](https://sourceware.org/binutils/docs/binutils/objcopy.html)
 
-格式：objcopy \[选项\] \<输入\> \[输出\]
+格式：`objcopy [选项] <输入> [输出]`
+
 若不指定输出文件，将会直接删除输入文件并使用输入的文件名。
 
 常用选项：
 
-* -I \<bfdname\> 指定输入格式
-* -O \<bfdname\> 指定输出格式
-* -j \<段名\> 限定仅处理某个段
+* `-I <bfdname>` 指定输入格式
+* `-O <bfdname>` 指定输出格式
+* `-j <段名>` 限定仅处理某个段
 
 常见用法：
 
-提取.text段：
+提取`.text`段：
 
 ```
 $ objcopy -Obinary -j .text bootsect.elf bootsect.mbr
 ```
 
-该命令从`bootsect.elf`中提取.text段（代码段），存入`bootsect.mbr`，对段的内容不进行改动。
+该命令从`bootsect.elf`中提取`.text`段（代码段），存入`bootsect.mbr`，对段的内容不进行改动。
 
 # GCC
 
 [GCC(GNU Compiler Collection)](https://gcc.gnu.org/)包括一系列编程语言的编译器以及语言的底层库。在ucore的开发中，仅使用其C编译器(gcc)。
+
+与Binutils相同，使用交叉编译工具链时，需要在命令前附加目标的Target triplet。要使用`mips-linux-gnu`的`gcc`，应该使用的命令为`mips-linux-gnu-gcc`。
+
+## gcc
+
+GCC的C编译器。一般用来编译C程序，也可以进行连接或汇编带预处理的汇编语言。GCC所支持的选项根据不同版本有所不同。
+
+格式：`gcc [选项] 输入`
+
+常用选项：
+
+* `-o <输出>` 指定输出文件名
+* `-c` 仅进行编译而不连接
+* `-I` 设定预处理include搜索路径
+* `-Wall` 开启大部分警告
+* `-std=<标准>` 设定C语言标准
+* `-ffreestanding` 设定运行环境为`freestanding`，即无标准库
+
+常见用法：
+
+编译程序至目标文件：
+
+```
+$ gcc -std=c99 -I ../include -Wall -c -o mm.o mm.c
+```
+
+该命令编译`mm.c`，在`../include`以及系统头文件中搜索#include所引用的头文件，并且对大多数可能存在问题的地方提出警告，最终将结果输出至`mm.o`。
