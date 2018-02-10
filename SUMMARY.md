@@ -12,4 +12,5 @@
 * [初始化ram的方法](chu-shi-hua-ram-de-fang-fa.md)
 * [串口工具的配置和使用](chuan-kou-gong-ju-de-pei-zhi-he-shi-yong.md)
 * [TFTP服务器的搭建和使用](tftpfu-wu-qi-de-da-jian-he-shi-yong.md)
+* [操作系统的移植](cao-zuo-xi-tong-de-yi-zhi.md)
 
