@@ -7,4 +7,5 @@
 * [系统集成](integration/README.md)
 * [龙芯实验箱](long-xin-shi-yan-xiang-jie-shao.md)
 * [FPGA固化方法](fpgagu-hua-fang-fa.md)
+* [实验箱测试](shi-yan-xiang-ce-shi.md)
 
