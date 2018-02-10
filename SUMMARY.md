@@ -11,4 +11,5 @@
 * [测试程序编写及coe文件生成](ce-shi-cheng-xu-bian-xie-ji-coe-wen-jian-sheng-cheng.md)
 * [初始化ram的方法](chu-shi-hua-ram-de-fang-fa.md)
 * [串口工具的配置和使用](chuan-kou-gong-ju-de-pei-zhi-he-shi-yong.md)
+* [TFTP服务器的搭建和使用](tftpfu-wu-qi-de-da-jian-he-shi-yong.md)
 
