@@ -9,4 +9,5 @@
 * [FPGA固化方法](fpgagu-hua-fang-fa.md)
 * [实验箱测试](shi-yan-xiang-ce-shi.md)
 * [测试程序编写及coe文件生成](ce-shi-cheng-xu-bian-xie-ji-coe-wen-jian-sheng-cheng.md)
+* [初始化ram的方法](chu-shi-hua-ram-de-fang-fa.md)
 
