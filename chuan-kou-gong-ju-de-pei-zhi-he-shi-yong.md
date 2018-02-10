@@ -1,0 +1,266 @@
+## Linux系统下minicom的配置使用
+
+Linux系统下，使用minicom实现开发板与主机的交互。
+
+首先输入 sudo apt-get install minicom 安装minicom，输入minicom -s 配置minicom，出现如下界面
+
+![](/assets/串口1)
+
+
+
+
+
+选择 Serial port setup
+
+
+
+进入配置界面
+
+
+
+其中 E 行依据开发板上串口控制器的初始化代码中设置的波特率进行选择，此时应为57600，F 和 G 行选择 NO。 
+
+配置完成后按 Enter 返回，选择 Save setup as dfl 保存为默认设置。
+
+
+
+将 USB 转串口一端连到电脑上，一端连到串口线上，串口线另一端连接到开发板上串口接口上。在Linux 终端运行，输入命令sudo minicom，开启电脑上的串口界面，
+
+
+
+minicom基本操作如下：
+
+1）需使用Ctrl+a 进入设置状态
+
+2）按z进入设置菜单
+
+（1）S键：发送文件到目标系统中；
+
+（2）W键：自动卷屏。当显示的内容超过一行之後，自动将後面的内容换行。这个功能在查看内核的啓动信息时很有用。
+
+（3）C键：清除屏幕的显示内容；
+
+（4）B键：浏览minicom的历史显示；
+
+（5）X键：退出mInicom，会提示确认退出。
+
+
+
+配置文件所在目录
+
+Ctrl + A --&gt; O
+
+出现如下
+
++-----\[configuration\]------+
+
+\| Filenames and paths \|
+
+\| File transfer protocols -\|
+
+\| Serial port setup \|
+
+\| Modem and dialing \|
+
+\| Screen and keyboard \|
+
+\| Save setup as dfl \|
+
+\| Save setup as.. \|
+
+\| Exit \|
+
++--------------------------+
+
+
+
+选择"Filenames and paths"
+
+出现如下界面
+
++-----------------------------------------------------------------------+
+
+\| A - Download directory : /home/crliu \|
+
+\| B - Upload directory : /tmp \|
+
+\| C - Script directory : \|
+
+\| D - Script program : runscript \|
+
+\| E - Kermit program : \|
+
+\| F - Logging options \|
+
+\| \|
+
+\| Change which setting? \|
+
++-----------------------------------------------------------------------+
+
+
+
+（1）A - download 下载文件的存放位置（开发板 ---&gt; PC）
+
+开发板上的文件将被传输到PC机上的/home/crliu目录下。
+
+（2）B - upload 从此处读取上传的文件（PC ---&gt; 开发板）
+
+PC机向开发板发送文件，需要发送的文件在/tmp目录下（PC机上的目录）。做了此项配置後，每次向开发板发送文件时，只需输入文件名即可，无需输入文件所在目录的绝对路径。
+
+
+
+\*启动minicom的时候，开启自动换行： 
+
+$minicom -w 
+
+如果不加这个项，那么在minicom和pc交互的时候中键入命令超过一行时候会被截断，（这时候可以通过&lt;C-a&gt; w来开和关切换截断行功能）. 
+
+ 
+
+\*启动minicom的时候，显示颜色： 
+
+$minicom -c on 
+
+这样，启动之后我们会发现显示的内容不是黑白的了。 
+
+ 
+
+\*启动一个图形的minicom: 
+
+$xminicom 
+
+ 
+
+\*启动minicom的时候，自动创建日志捕捉文件my\_capturefile： 
+
+$minicom -C my\_capturefile 
+
+这样，启动之后，所在minicom的输出都会在my\_capturefile中保留一份,如果原来文件存在，则追加，不存在则创建一个。 
+
+
+
+\*启动minicom的时候，将命令键修改成Meta键（&lt;C-a&gt;变成\[Alt\]或者\[ESC\]等）: 
+
+$minicom -m 
+
+这样，我们可以取代用&lt;C-a&gt; \*发送命令的方式，将&lt;C-a&gt;替换成\[Alt\]或者\[ESC\]. 
+
+ 
+
+\*启动minicom的时候，指定运行的脚本： 
+
+$minicom -S &lt;filename&gt; 
+
+这里，&lt;filename&gt;是你的脚本文件的名字，应该指定绝对路径，否则就会在你启动minicom的路径下寻找。关于minicom的脚本，可以参考man手册"man runscript".交互命令中可以运行"&lt;C-a&gt;G"来运行脚本。 
+
+关于runscript脚本： 
+
+注释是'\#'开始的。 
+
+send命令中的字符串，有\c就不会发送默认的\r了。例:send "ls \c"就不会自动回车，这里'\c'也可以在前面。 
+
+目前发现，脚本功能比较弱。在minicom原代码中有简单的例子：scriptdemo和unixlogin,可以直接在linux运行runscript. 
+
+可以指定minicom的脚本运行程序， 
+
+D - Script program 
+
+    作为脚本解释器的程序。缺省是“runscript”，也可用其它的东东\(如: /bin/sh 或 "expect"，这样就可以用shell或者其他的脚本了^\_^\)。Stdin和Stdout连接到modem，Stderr连接到屏幕。 
+
+    
+
+ \*minicom的交互使用 
+
+Minicom是基于窗口的。要弹出所需功能的窗口，可按下Ctrl-A \(以下使用C-A来表示Ctrl-A\),然后再按各功能键\(a-z或A-Z\)。先按C-A，再按'z'，将出现一个帮助窗口，提供了所有命令的简述。配置 minicom\(-s 选项，或者C-A、O\)时，可以改变这个转义键，不过现在我们还是用Ctrl-A吧。 
+
+这里，只给出很少的命令，更多的交互命令参见"&lt;C-a&gt; z"的帮助输出。 
+
+ 
+
+\*查看帮助： 
+
+输入"&lt;C-a&gt; z". 
+
+这样会显示所命令列表，便于查找。 
+
+ 
+
+\*回到shell: 
+
+输入"&lt;C-a&gt; j". 
+
+这样minicom会在后台stop,直到fg将它调到前台。 
+
+ 
+
+\*开/关捕捉minicom中的输出到一个文件： 
+
+输入"&lt;C-a&gt; l". 
+
+这样会打开/关闭捕捉输出功能，捕捉的输出会存放在一个你选择的文件中。 
+
+
+
+\*退出minicom: 
+
+输入"&lt;C-a&gt; x". 
+
+这样会退出minicom. 
+
+
+
+## Windows系统下SecureCRT的ECOM的使用
+
+
+
+ windows系统下可以使用免安装的 SecureCRT或 ECOM串口软件\(发布包目录下 lab\_environment/uart\_soft\)。 
+
+先使用 USB 转串口和串口连接线将电脑和开发板相连。
+
+### SecureCRT
+
+
+
+双击程序打开，第一次启动界面如下：
+
+![](/assets/串口2)
+
+
+
+
+
+
+
+第一行 Protocol 下拉选择 Serial，如下：
+
+![](/assets/串口3)
+
+
+
+
+
+其中 Baud rate 为选择波特率，需根据开发板上串口控制器的初始化代码中设置的波特率进行选择\(对于 本次校验设备，波特率需选择 57600\)。右侧 Flow Control 全不选。Port 的选择需根据 Windows 电脑上的端 口进行选择，可以右键电脑选择设备管理器进入设备管理器查看：
+
+
+
+![](/assets/串口4)
+
+
+
+
+
+配置好串口后，点击 connect，即可进入串口界面，在波特率设置正确的情况下，可以通过串口与开发板进行交互，如下：
+
+![](/assets/串口5)
+
+
+
+### ECOM
+
+![](/assets/串口6)
+
+![](/assets/串口7)
+
+
+

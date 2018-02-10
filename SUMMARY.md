@@ -10,4 +10,5 @@
 * [实验箱测试](shi-yan-xiang-ce-shi.md)
 * [测试程序编写及coe文件生成](ce-shi-cheng-xu-bian-xie-ji-coe-wen-jian-sheng-cheng.md)
 * [初始化ram的方法](chu-shi-hua-ram-de-fang-fa.md)
+* [串口工具的配置和使用](chuan-kou-gong-ju-de-pei-zhi-he-shi-yong.md)
 
