@@ -8,4 +8,5 @@
 * [龙芯实验箱](long-xin-shi-yan-xiang-jie-shao.md)
 * [FPGA固化方法](fpgagu-hua-fang-fa.md)
 * [实验箱测试](shi-yan-xiang-ce-shi.md)
+* [测试程序编写和coe文件生成](ce-shi-cheng-xu-bian-xie-he-coe-wen-jian-sheng-cheng.md)
 
