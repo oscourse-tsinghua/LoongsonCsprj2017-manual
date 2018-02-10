@@ -1,6 +1,6 @@
-测试程序后缀名为 .s文件
+本文介绍测试程序的编写格式（后缀名为 .s文件）即ram初始化文件（后缀名为.coe）
 
-格式如下:
+## 格式如下:
 
 .org 0x0	//指示程序从地址0x0开始
 
@@ -16,7 +16,7 @@
 
     
 
- 编译
+## 编译
 
 编译和链接环境位于func\_test/soft/src/目录下，其中：
 
@@ -24,11 +24,19 @@ bin.lds 为链接脚本，bin.lds.S 为其源码；
 
 convert 将编译生成的二进制可执行文件转换成存储器 RAM 的初始化配置文件，convert.c 为其源码； 
 
+
+
+
+
 Makefile 和 rules.make 规定了编译的配置信息和规则，
 
 交叉编译最终生成可执行文件为 资源发布包目录下 func\_test/soft/ 下 main.bin 和 main.data ，
 
 RAM 的初始化配置文件位于 资源发布包目录下 func\_test/soft/delay\_ram\_coe 和 func\_test/soft/nodelay\_ram\_coe 下。
+
+
+
+
 
 
 
