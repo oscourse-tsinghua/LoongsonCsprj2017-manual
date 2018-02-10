@@ -6,4 +6,5 @@
 * [MIPS32S上的C0编译器实验](compiler/README.md)
 * [系统集成](integration/README.md)
 * [龙芯实验箱](long-xin-shi-yan-xiang-jie-shao.md)
+* [FPGA固化方法](fpgagu-hua-fang-fa.md)
 
