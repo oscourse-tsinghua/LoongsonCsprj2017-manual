@@ -13,5 +13,5 @@
 * [串口工具的配置和使用](串口工具的配置和使用.md)
 * [TFTP服务器的搭建和使用](TFTP服务器的搭建和使用.md)
 * [操作系统的移植](操作系统的移植.md)
-* [Flash 烧录方法](flash-shao-lu.md)
+* [Flash烧录方法](flashshao-lu.md)
 
