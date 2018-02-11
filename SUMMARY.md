@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [基于FPGA的MIPS32SCPU实现](cpu/README.md)
-  * [test](cpu/README.md#vivado%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83)
+  * [test](cpu/README.md#%E4%B8%80-%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B)
 * [MIPS32S CPU上的ucore教学操作系统](ucore/README.md)
 * [MIPS32S上的C0编译器实验](compiler/README.md)
 * [系统集成](integration/README.md)
