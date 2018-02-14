@@ -6,6 +6,7 @@
 * [基于FPGA的MIPS32SCPU实现](cpu/README.md)
   * [2.1 Vivado开发环境](cpu/21-vivadode-an-zhuang.md)
     * [2.1.1 Vivado环境的安装](cpu/21-vivadode-an-zhuang/211-vivadohuan-jing-de-an-zhuang.md)
+    * [2.1.2 Vivado的基本使用](cpu/21-vivadode-an-zhuang/212-vivadode-ji-ben-shi-yong.md)
 * [MIPS32S CPU上的ucore教学操作系统](ucore/README.md)
 * [MIPS32S上的C0编译器实验](compiler/README.md)
 * [系统集成](integration/README.md)
