@@ -2,13 +2,11 @@
 
 官方下载地址：
 
-https://china.xilinx.com/support/download.html
-
-
+[https://china.xilinx.com/support/download.html](https://china.xilinx.com/support/download.html)
 
 为了方便参赛队，建立了一个网盘下载：
 
-http://pan.baidu.com/s/1miE408S   密码：nvgx
+[http://pan.baidu.com/s/1miE408S](http://pan.baidu.com/s/1miE408S)   密码：nvgx
 
 # 一. windows下的安装
 
@@ -79,9 +77,7 @@ http://pan.baidu.com/s/1miE408S   密码：nvgx
 
 可以在虚拟机关机状态下进入虚拟机-&gt;设置，调节该虚拟机内存，硬盘和共享文件夹等配置
 
-
-
-2. Vivado的安装
+1. Vivado的安装
 
 vivado压缩包大小为20个G上下，可以在Windows系统下解后再复制到虚拟机中，或在Ubantu中使用命令 `tar -zxvf 压缩文件名.tar.gz解压`。
 
@@ -89,15 +85,13 @@ vivado压缩包大小为20个G上下，可以在Windows系统下解后再复制�
 
 进入到安装包目录中，右键使用Terminal打开。
 
-输入命令`chmod -R a+x * `获取安装权限，
+输入命令`chmod -R a+x *`获取安装权限，
 
 输入命令`./xsetup`进入安装
 
 接下来的安装界面与windows界面安装相同，安装路径建议设置为home
 
-
-
-3. 打开软件
+1. 打开软件
 
 安装完成后（默认装在opt文件夹之中）
 
