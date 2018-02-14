@@ -4,7 +4,6 @@
   * [1.1 龙芯实验箱介绍](实验箱介绍.md)
   * [1.2 实验箱测试流程](实验箱测试.md)
 * [基于FPGA的MIPS32SCPU实现](cpu/README.md)
-  * [test](cpu/README.md#一-新建工程)
 * [MIPS32S CPU上的ucore教学操作系统](ucore/README.md)
 * [MIPS32S上的C0编译器实验](compiler/README.md)
 * [系统集成](integration/README.md)
