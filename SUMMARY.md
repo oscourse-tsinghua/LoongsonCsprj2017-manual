@@ -13,8 +13,11 @@
     * [2.2.3 串口工具的使用](串口工具的配置和使用.md)
     * [2.2.4 TFTP服务器的搭建及使用](TFTP服务器的搭建和使用.md)
     * [2.2.5 Liunx内核的移植过程](操作系统的移植.md)
+  * [3. Ram的初始化](ram的初始化.md)
+    * [3.1 测试程序的编写](测试程序编写及coe文件生成.md)
+    * [3.2 coe文件的生成](coe文件的生成过程.md)
+    * [3.3 Ram的初始化过程](初始化ram的方法.md)
 * [MIPS32S CPU上的ucore教学操作系统](ucore/README.md)
 * [MIPS32S上的C0编译器实验](compiler/README.md)
 * [系统集成](integration/README.md)
-* [测试程序编写及coe文件生成](测试程序编写及coe文件生成.md)
 
