@@ -7,6 +7,7 @@
   * [2.1 Vivado开发环境](Vivado开发环境.md)
     * [2.1.1 Vivado环境的安装](Vivado环境的安装.md)
     * [2.1.2 Vivado的基本使用](Vivado的基本使用.md)
+  * [2.2 操作系统的移植](22-cao-zuo-xi-tong-de-yi-zhi.md)
 * [MIPS32S CPU上的ucore教学操作系统](ucore/README.md)
 * [MIPS32S上的C0编译器实验](compiler/README.md)
 * [系统集成](integration/README.md)

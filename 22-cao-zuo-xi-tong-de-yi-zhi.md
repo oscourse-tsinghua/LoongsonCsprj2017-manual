@@ -1,0 +1,16 @@
+本节主要介绍操作系统移植至实验箱的过程及方法
+
+
+
+\(1\) 烧写 PMON 文件（gzrom.bin）到可插拔 SPI flash 上。
+
+\(2\) 下载 完备 soc 生成的 bit 流文件。
+
+\(3\) 运行 PMON。
+
+\(4\) 搭建 tftp 服务器 Load 内核\(vmlinux\)。
+
+\(5\) 启动内核。
+
+本实验所需工具均位于wiki cpu部分中的第一届大赛资源包http://os.cs.tsinghua.edu.cn/oscourse/project/LoongsonCsprj2017/bit/cpu
+
