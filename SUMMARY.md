@@ -17,6 +17,7 @@
     * [2.3.1 测试程序的编写](cpu/测试程序编写及coe文件生成.md)
     * [2.3.2 coe文件的生成](cpu/coe文件的生成过程.md)
     * [2.3.3 Ram的初始化过程](cpu/初始化ram的方法.md)
+    * [2.2.4 测试程序编译环境及流程](cpu/测试程序编译环境及流程介绍.md)
 * [MIPS32S CPU上的ucore教学操作系统](ucore/README.md)
 * [MIPS32S上的C0编译器实验](compiler/README.md)
 * [系统集成](integration/README.md)
