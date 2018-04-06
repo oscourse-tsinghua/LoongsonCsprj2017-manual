@@ -19,6 +19,9 @@
     * [2.3.3 Ram的初始化过程](cpu/初始化ram的方法.md)
     * [2.2.4 测试程序编译环境及流程](cpu/测试程序编译环境及流程介绍.md)
 * [MIPS32S CPU上的ucore教学操作系统](ucore/README.md)
+  * [3.1 make 命令的使用](ucore/make.md)
+  * [3.2 交叉工具链介绍](ucore/crosstools.md)
+  * [3.3 U-Boot的移植过程](ucore/U-Boot移植过程.md)
 * [MIPS32S上的C0编译器实验](compiler/README.md)
 * [系统集成](integration/README.md)
 
