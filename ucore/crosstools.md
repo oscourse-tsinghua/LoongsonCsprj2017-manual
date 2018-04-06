@@ -22,7 +22,9 @@ machine-vendor-os
 需要注意的是，对应同样的目标可能有多种不同的Target triplet。在选择具体的工具链时，只需要一种满足需要的即可。例如，在准备对应于MIPS32 Big endian算的ucore工具链时，可以选择如下的Target triplet:
 
 * mips-softfloat-linux-gnueabi
-* mips-linux-gnu (Debian/Ubuntu)
+* mipsel-linux-gnu (Debian/Ubuntu)
+
+在Debian/Ubuntu下，可以直接执行`apt-get install binutils-mipsel-linux-gnu gcc-mipsel-linux-gnu`安装需要的工具。
 
 # Binutils
 
