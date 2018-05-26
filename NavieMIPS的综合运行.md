@@ -14,7 +14,19 @@ git clone https://github.com/z4yx/NaiveMIPS-HDL
 
 使用NaiveMIPS-HDL-brd-NSCSCC\utility\serial\_load.py 的python程序测试该cpu。
 
-NaiveMIPS使用NavieBootLoader作为其一级引导程序，
+NaiveMIPS使用NavieBootLoader作为其一级引导程序，已经初始化至cpu的片上内存，故可以直接用 serial\_load.py程序通过串口进行交互，其中a该程序用python2编写，需要预先安装 pyserial，pyelftools，tqdm的python库。
+
+进入程序目录，输入如下命令查看程序使用
+
+```
+./serial_load.py -h
+```
+
+输入如下命令，测试串口线和内存
+
+```
+./serial_load.py -s /dev/ttyUSB0 -t ram
+```
 
 
 
