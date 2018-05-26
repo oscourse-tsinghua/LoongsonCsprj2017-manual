@@ -7,6 +7,7 @@
   * [2.1 Vivado开发环境](cpu/Vivado开发环境.md)
     * [2.1.1 Vivado环境的安装](cpu/Vivado环境的安装.md)
     * [2.1.2 Vivado的基本使用](cpu/Vivado的基本使用.md)
+    * [2.1.3 Vivado和实验板的连接](cpu/vivado和板子的连接.md)
   * [2.2 基于soc\_up的移植过程](cpu/基于soc_up的移植过程.md)
     * [2.2.1 Flash的烧录](cpu/flash烧录方法.md)
     * [2.2.2 FPGA固化方法](cpu/FPGA固化方法.md)
