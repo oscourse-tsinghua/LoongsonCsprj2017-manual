@@ -8,7 +8,7 @@
 
 1. 将目录lab\_environment\_v1.00\flash\_programmer\programmer\_by\_uart 下的programmer\_by\_uart.bit 文件通过vivado下载至FPGA。
 
-2. 通过串口线将FPGA连接至主机，通过串口软件ECOM或SecureCRT将PMON的二进制文件 （FPGA\_test\_v1.00\FPGA\_soc\_test目录下的gzrom.bin文件）烧录至flash中，其中波特率选为230400，连接正常后，根据提示，键盘输入x表示开始使用xmodem模式传输串口软件使用xmodem模式传输binary文件。等待传输完成,编程过程中，不需要拔下 flash 芯片。
+2. 通过串口线将FPGA连接至主机，通过将PMON的二进制文件 （FPGA\_test\_v1.00\FPGA\_soc\_test目录下的gzrom.bin文件）烧录至flash中，其中波特率选为230400，连接正常后，根据提示，键盘输入x表示开始使用xmodem模式传输串口软件使用xmodem模式传输binary文件。等待传输完成,编程过程中，不需要拔下 flash 芯片。
 
-\( ECOM和SecureCRT 软件位于lab\_environment\_v1.00\uart\_soft，可直接运行与windows环境下，如果过程不成功可以尝试在设备管理器处设置串口的波特率，Linux环境下使用 minicom工具）
+\( ECOM和SecureCRT 软件位于lab\_environment\_v1.00\uart\_soft，可直接运行与windows环境下，如果过程不成功可以尝试在设备管理器处设置串口的波特率，Linux环境下使用 minicom工具，关于串口工具的使用，可以查看2.2.3串口工具的使用）
 
