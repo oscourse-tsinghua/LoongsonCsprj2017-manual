@@ -2,9 +2,9 @@
 
 1.下载并综合运行生成NaiveMIPS
 
-2. 启动U-boot
+2.启动U-boot
 
-3. 启动supervisor
+3.启动supervisor
 
 4.启动ucore
 
