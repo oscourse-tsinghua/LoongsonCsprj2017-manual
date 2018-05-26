@@ -8,3 +8,5 @@ git clone https://github.com/z4yx/NaiveMIPS-HDL
 
 3. 综合运行并生成bit流文件
 
+
+
