@@ -1,5 +1,3 @@
-vivado 提供相应IP，不需要用户自行编写verilog文件实现ram功能
-
 ## 1. 添加内核IP
 
 点击Flow Navigator中的IP Catalog，打开窗口添加IP核
@@ -62,5 +60,5 @@ Memory Type：ROM，单口RAM，简化的双口RAM（一端读一端写），真
 
 ## 3. ROM的初始化
 
-使用coe文件（参考测试程序的编及coe文件的生成）可以给ROM输入初值，COE文件最后会生成MIF文件用于初始化ROM，若只用于仿真可以仅替换mif文件即可。
+将编写好的程序编译链接生成coe文件（具体实现方法见2.3.2测试程序的编及coe文件的生成）给ROM输入初值，COE文件最后会生成MIF文件用于初始化ROM，若只用于仿真可以仅替换mif文件即可。
 
