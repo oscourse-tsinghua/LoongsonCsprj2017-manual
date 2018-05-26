@@ -16,7 +16,7 @@
     * [2.2.5 Liunx内核的移植过程](cpu/操作系统的移植.md)
   * [2.3 ROM的初始化](cpu/ram的初始化.md)
     * [2.3.1 ROM的初始化过程](cpu/初始化ram的方法.md)
-    * [2.3.2 测试程序编译环境及流程](cpu/测试程序编译环境及流程介绍.md)
+    * [2.3.2 测试程序编译流程](cpu/测试程序编译环境及流程介绍.md)
   * [2.4 基于Naive MIPS的移植过程](cpu/基于NaiveMIPS cpu的启动过程.md)
     * [2.4.1 NavieMIPS的综合运行](cpu/NavieMIPS的综合运行.md)
     * [2.4.2 supervisor的启动过程](cpu/监控程序的移植过程.md)
@@ -25,7 +25,8 @@
 * [MIPS32S CPU上的ucore教学操作系统](ucore/README.md)
   * [3.1 make 命令的使用](ucore/make.md)
   * [3.2 交叉工具链介绍](ucore/crosstools.md)
-  * [3.3 U-Boot的移植过程](ucore/U-Boot移植过程.md)
+  * [3.3 交叉编译环境的配置](ucore/交叉编译环境配置.md)
+  * [3.4 U-Boot的移植过程](ucore/U-Boot移植过程.md)
 * [MIPS32S上的C0编译器实验](compiler/README.md)
 * [系统集成](integration/README.md)
 
