@@ -7,7 +7,7 @@
         ./serial_load.py -s /dev/ttyUSB0 -l 文件绝对路径
 ```
 
-       按下reset键启动U-Boot
+   按下reset键启动U-Boot
 
 
 
