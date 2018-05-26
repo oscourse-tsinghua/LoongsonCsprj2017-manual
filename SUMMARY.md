@@ -19,6 +19,8 @@
     * [2.3.2 coe文件的生成](cpu/coe文件的生成过程.md)
     * [2.3.3 Ram的初始化过程](cpu/初始化ram的方法.md)
     * [2.2.4 测试程序编译环境及流程](cpu/测试程序编译环境及流程介绍.md)
+  * [2.4 基于Naive MIPS的移植过程](cpu/基于NaiveMIPS cpu的启动过程.md)
+    * [NavieMIPS的综合运行](cpu/NavieMIPS的综合运行.md)
 * [MIPS32S CPU上的ucore教学操作系统](ucore/README.md)
   * [3.1 make 命令的使用](ucore/make.md)
   * [3.2 交叉工具链介绍](ucore/crosstools.md)

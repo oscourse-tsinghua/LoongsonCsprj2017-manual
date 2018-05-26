@@ -6,9 +6,7 @@ vivado 提供相应IP，不需要用户自行编写verilog文件实现ram功能
 
 搜索 ram模块，出现如下
 
-![](/assets/ram1)
-
-
+![](/assets/ram1.png)
 
 ### 选择distributed memory generator和block memorygenerator标准：
 
@@ -40,8 +38,6 @@ Block RAM是比较大块的RAM。即使用了它的一小部分，那么整个Bl
 
 FPGA中的资源位置是固定的，比如bram就是一列一列分布的。这就可能造成用户逻辑和bram之间的route延时比较长。举个最简单的样例，在大规模FPGA中，假设用光全部的bram。性能通常会下降，甚至出现route不通的情况，就是这个原因。
 
-
-
 ## 2. 设置参数
 
 Component Name：生成的IP核模块名
@@ -54,15 +50,15 @@ Memory Type：ROM，单口RAM，简化的双口RAM（一端读一端写），真
 
 若选择dram 出现如下
 
-![](/assets/ram2)
+![](/assets/ram2.png)
 
-![](/assets/ram3)
+![](/assets/ram3.png)
 
 若选择bram 出现如下
 
-![](/assets/ram4)
+![](/assets/ram4.png)
 
-![](/assets/ram5)
+![](/assets/ram5.png)
 
 ## 3. ROM的初始化
 
