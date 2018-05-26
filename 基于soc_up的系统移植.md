@@ -2,11 +2,11 @@
 
 ###### 过程如下：
 
-\(1\) 烧写 PMON 文件（gzrom.bin）到可插拔 SPI flash 上。（具体方法见flash）
+\(1\) 烧写 PMON 文件（gzrom.bin）到可插拔 SPI flash 上。（具体方法见2.2.1flash的烧录）
 
-\(2\) 下载 完备 soc 生成的 bit 流文件。
+\(2\) 下载 由sop\_up综合生成的 bit 流文件至龙芯FPGA中。
 
-\(3\) 运行 PMON。
+\(3\) 运行 PMON（具体方法见）。
 
 \(4\) 搭建 tftp 服务器 Load 内核\(vmlinux\)。
 
