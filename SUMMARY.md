@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-  * [1.1 龙芯实验箱介绍](cpu/实验箱介绍.md)
-  * [1.2 实验箱测试流程](cpu/实验箱测试.md)
+  * [1.1龙芯实验箱介绍](cpu/实验箱介绍.md)
+  * [1.2实验箱测试流程](cpu/实验箱测试.md)
 * [基于FPGA的MIPS32SCPU实现](cpu/README.md)
   * [2.1 Vivado开发环境](cpu/Vivado开发环境.md)
     * [2.1.1 Vivado环境的安装](cpu/Vivado环境的安装.md)
@@ -16,8 +16,8 @@
     * [2.2.5 Liunx内核的移植过程](cpu/操作系统的移植.md)
   * [2.3 ROM的初始化](cpu/ram的初始化.md)
     * [2.3.1 ROM的初始化过程](cpu/初始化ram的方法.md)
-    * [2.3.2 测试程序编译流程](cpu/测试程序编译环境及流程介绍.md)
-  * [2.4 基于Naive MIPS的移植过程](cpu/基于NaiveMIPS cpu的启动过程.md)
+    * [2.3.2  测试程序编译流程](cpu/测试程序编译环境及流程介绍.md)
+  * [2.4 基于NaiveMIPS的移植过程](cpu/基于NaiveMIPScpu的启动过程.md)
     * [2.4.1 NavieMIPS的综合运行](cpu/NavieMIPS的综合运行.md)
     * [2.4.2 supervisor的启动过程](cpu/监控程序的移植过程.md)
     * [2.4.3 U-Boot的启动过程](cpu/U-Boot启动过程.md)
