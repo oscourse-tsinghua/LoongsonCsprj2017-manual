@@ -29,6 +29,7 @@
   * [3.4 U-Boot的移植过程](ucore/U-Boot移植过程.md)
   * [3.5 QEMU介绍](ucore/qemu.md)
   * [3.6 ucore编译方法](ucore/os_comp.md)
+  * [3.7 龙芯编译环境配置](ucore/龙芯编译环境配置.md)
 * [MIPS32S上的C0编译器实验](compiler/README.md)
 * [系统集成](integration/README.md)
 
