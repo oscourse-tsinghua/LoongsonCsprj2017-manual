@@ -1,0 +1,11 @@
+修改 term.py 中的交叉编译环境为 龙芯指定的编译环境
+第30行，将编译环境指定为龙芯编译环境的绝对路径
+CCPREFIX = '/opt/gcc-4.3-ls232/bin/mipsel-linux-'
+
+第61行，修改
+len(binary) == 16 and binary[ 4 : ] = '\0' * 12:
+	binary = binary[ : 4]
+
+说明一下，这里是修改代码段的数据大小。对于龙芯的编译环境，.text的大小是16字节，其中前四个字节是代码数据，后面12个字节是 '\0'，所以需要判断并提取出来。
+至于如何查看.text的大小，可以编一个文本进行格式转换，假如现在已经编译了一个 a.out文件
+mipsel-linux-objcopy -j.text a.out -Obinary b 即可查看.text的大小
