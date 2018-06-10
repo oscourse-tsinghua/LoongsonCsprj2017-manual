@@ -22,6 +22,7 @@
     * [2.4.2 supervisor的启动过程](cpu/监控程序的移植过程.md)
     * [2.4.3 U-Boot的启动过程](cpu/U-Boot启动过程.md)
     * [2.4.4 ucore的启动过程](cpu/ucore的启动过程.md)
+  * [2.5 ILA的使用方法](cpu/ILA的使用.md)
 * [MIPS32S CPU上的ucore教学操作系统](ucore/README.md)
   * [3.1 make 命令的使用](ucore/make.md)
   * [3.2 交叉工具链介绍](ucore/crosstools.md)
