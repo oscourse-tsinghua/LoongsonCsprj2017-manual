@@ -49,7 +49,7 @@
 
 这个情况是C++库的问题，下一个DiretX Repair修复一下，C++redistribution，然后重启即可。
 
-# 二. Ubantu系统下的安装
+# 二. Ubantu系统下的安装（方法一）
 
 为了开发环境的统一，建议在Ubantu下面安装
 
@@ -110,4 +110,43 @@ vivado压缩包大小为20个G上下，可以在Windows系统下解后再复制�
 安装完成后（默认装在opt文件夹之中）
 
 在Terminal回到根目录，使用指令"sudo sh /opt/Xilinx/Vivado/2017.1/bin/vivado”打开软件，或者进入到bin目录下，用“./vivado”命令打开
+
+# 二. Ubantu系统下的安装（方法二）
+
+基于docker的开发环境部署
+
+1.安装docker
+
+	apt install docker.io
+
+如果出现错误
+
+    E:Unable to locate package docker.io
+
+则先执行再安装
+
+    sudo apt-get update
+
+2.下载Vivado 2018.1的Docker下镜像（预留至少35GB）
+
+    ./install-vivado-image.sh
+
+如果出现错误
+
+    bash: ./install-vivado-image.sh: Permission denied
+
+则先执行再下载
+
+    chmod u+x install-vivado-image.sh
+
+3.编译
+
+    git clone https://github.com/z4yx/NaiveMIPS-HDL.git
+	cd NaiveMIPS-HDL
+	# building process takes about one hour
+	docker run -ti --rm -v $PWD:/home/vivado/project vivado:2018.1 /opt/Xilinx/Vivado/2018.1/bin/vivado -mode tcl -source xilinx/NaiveMIPS/build.tcl xilinx/NaiveMIPS/PrjVivao.xpr
+
+4.打开界面
+
+    sudo docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v $PWD:/home/vivado/project vivado:2018.1
 
