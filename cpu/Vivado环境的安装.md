@@ -10,7 +10,7 @@
 
 # 一. windows下的安装
 
-1. 本安装包支持win7、10、Ubantu等系统（64位）。
+1. 本安装包支持win7、10、Ubuntu等系统（64位）。
 2. 解压后，在点击xsetup即可进入安装向导界面。
 
 点击next
@@ -49,13 +49,13 @@
 
 这个情况是C++库的问题，下一个DiretX Repair修复一下，C++redistribution，然后重启即可。
 
-# 二. Ubantu系统下的安装（方法一）
+# 二. Ubuntu系统下的安装（方法一）
 
-为了开发环境的统一，建议在Ubantu下面安装
+为了开发环境的统一，建议在Ubuntu下面安装
 
-1.Ubantu虚拟机的安装
+1.Ubuntu虚拟机的安装
 
-首先下载Vmware WorkStation软件作为虚拟机运行的环境（需要双系统请自行安装），下载Ubantu16.04的镜像文件ubuntu-16.04.iso。
+首先下载Vmware WorkStation软件作为虚拟机运行的环境（需要双系统请自行安装），下载Ubuntu16.04的镜像文件ubuntu-16.04.iso。
 
 在Vmware中点击新建虚拟机
 
@@ -65,7 +65,7 @@
 
 ![](/assets/xu2.png)
 
-添加下载好的Ubantu镜像文件路径
+添加下载好的Ubuntu镜像文件路径
 
 ![](/assets/xu3.png)
 
@@ -91,9 +91,9 @@
 
 2.Vivado的安装
 
-vivado压缩包大小为20个G上下，可以在Windows系统下解后再复制到虚拟机中，或在Ubantu中使用命令 `tar -zxvf 压缩文件名.tar.gz解压`。
+vivado压缩包大小为20个G上下，可以在Windows系统下解后再复制到虚拟机中，或在Ubuntu中使用命令 `tar -zxvf 压缩文件名.tar.gz解压`。
 
-注意：Ubantu不能随意复制东西到系统盘，建议复制文件到HOME根目录下。
+注意：Ubuntu不能随意复制东西到系统盘，建议复制文件到HOME根目录下。
 
 进入到安装包目录中，右键使用Terminal打开。
 
@@ -111,7 +111,7 @@ vivado压缩包大小为20个G上下，可以在Windows系统下解后再复制�
 
 在Terminal回到根目录，使用指令"sudo sh /opt/Xilinx/Vivado/2017.1/bin/vivado”打开软件，或者进入到bin目录下，用“./vivado”命令打开
 
-# 二. Ubantu系统下的安装（方法二）
+# 二. Ubuntu系统下的安装（方法二）
 
 基于docker的开发环境部署
 
