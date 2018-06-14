@@ -1,9 +1,9 @@
 # Summary
 
-* [Introduction](README.md)
+* [1. 简介](README.md)
   * [1.1龙芯实验箱介绍](cpu/实验箱介绍.md)
   * [1.2实验箱测试流程](cpu/实验箱测试.md)
-* [基于FPGA的MIPS32SCPU实现](cpu/README.md)
+* [2. 基于FPGA的MIPS32SCPU实现](cpu/README.md)
   * [2.1 Vivado开发环境](cpu/Vivado开发环境.md)
     * [2.1.1 Vivado环境的安装](cpu/Vivado环境的安装.md)
     * [2.1.2 Vivado的基本使用](cpu/Vivado的基本使用.md)
@@ -23,7 +23,7 @@
     * [2.4.3 U-Boot的启动过程](cpu/U-Boot启动过程.md)
     * [2.4.4 ucore的启动过程](cpu/ucore的启动过程.md)
   * [2.5 ILA的使用方法](cpu/ILA的使用.md)
-* [MIPS32S CPU上的ucore教学操作系统](ucore/README.md)
+* [3. MIPS32S CPU上的ucore教学操作系统](ucore/README.md)
   * [3.1 make 命令的使用](ucore/make.md)
   * [3.2 交叉工具链介绍](ucore/crosstools.md)
   * [3.3 交叉编译环境的配置](ucore/交叉编译环境配置.md)
@@ -32,6 +32,6 @@
   * [3.6 ucore编译方法](ucore/os_comp.md)
   * [3.7 龙芯编译环境配置](ucore/龙芯编译环境配置.md)
   * [3.8 对supervisor交互程序term.py的修改](ucore/对supervisor交互程序term.py的修改.md)
-* [MIPS32S上的C0编译器实验](compiler/README.md)
+* [4. MIPS32S上的C0编译器实验](compiler/README.md)
 * [系统集成](integration/README.md)
 
