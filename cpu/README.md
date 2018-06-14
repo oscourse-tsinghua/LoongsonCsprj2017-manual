@@ -1,16 +1,8 @@
 # 基于FPGA的MIPS32SCPU实现
 
-[参考链接](https://github.com/xyongcn/LoongsonCsprj2017#mips32s-cpu及外设的参考实现)
+为了方便在龙芯FPGA开发板了完成一个MIPS32S CPU的实现工作，我们在这里首先讨论Vivado开发环境的搭建过程。再描述如何利用龙芯公司的MIPS32 IP核soc_up和已编译好的Linux系统来体验跑一个真实操作系统的过程。然后尝试把自己的一个小汇编程序写到ROM中执行，从而对如何程序在CPU的运行的过程有一个感性的认识。
 
-## vivado开发环境
+为了理解自己写CPU的过程，这一章节也会基于2017年龙芯杯比赛中清华队的NaiveMIPS来跑supervisor、U-Boot和ucore这三个逐渐复杂的小系统。
 
-## CPU实现分析
-
-## 基本功能测试使用分析
-
-## 仿真环境下的功能测试
-
-## FPGA开发板上的功能测试
-
-
+为了理解CPU实现过程中的错误调试方法，最后还会描述如何使用vivado下的Debug IP核ILA。
 
