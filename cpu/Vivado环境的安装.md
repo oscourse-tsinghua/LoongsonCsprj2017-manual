@@ -127,9 +127,9 @@ vivado压缩包大小为20个G上下，可以在Windows系统下解后再复制�
 
     sudo apt-get update
 
-2.下载Vivado 2018.1的Docker下镜像（预留至少35GB）
+2.下载Vivado 2018.1的Docker下镜像（预留至少35GB）（该文件的下载[链接](https://github.com/z4yx/NaiveMIPS-HDL/install-vivado-image.sh)）
 
-    ./install-vivado-image.sh （该文件的下载[链接](https://github.com/z4yx/NaiveMIPS-HDL/install-vivado-image.sh)）
+    ./install-vivado-image.sh
 
 如果出现错误
 
