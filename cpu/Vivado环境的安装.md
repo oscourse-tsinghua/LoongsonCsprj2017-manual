@@ -25,7 +25,7 @@
 
 ![](/assets/import2.png)
 
-直接选择WebPack版本，为完全免费版本，虽然有功能的限制，但是完全满足竞赛要求，一共是15个G
+直接选择WebPack版本，为完全免费版本，虽然有功能的限制，但是完全满足竞赛要求，一共是15个G，Devices一项，因为龙芯开发板上搭载的是Artix7系列e的芯片，勾选上这个型号即可。
 
 ![](/assets/import4.png)
 
@@ -87,8 +87,6 @@
 
 可以在虚拟机关机状态下进入虚拟机-&gt;设置，调节该虚拟机内存，硬盘和共享文件夹等配置
 
-
-
 2.Vivado的安装
 
 vivado压缩包大小为20个G上下，可以在Windows系统下解后再复制到虚拟机中，或在Ubuntu中使用命令 `tar -zxvf 压缩文件名.tar.gz解压`。
@@ -103,8 +101,6 @@ vivado压缩包大小为20个G上下，可以在Windows系统下解后再复制�
 
 接下来的安装界面与windows界面安装相同，安装路径建议设置为home
 
-
-
 3.打开软件
 
 安装完成后（默认装在opt文件夹之中）
@@ -117,36 +113,54 @@ vivado压缩包大小为20个G上下，可以在Windows系统下解后再复制�
 
 1.安装docker
 
-	apt install docker.io
+```
+apt install docker.io
+```
 
 如果出现错误
 
-    E:Unable to locate package docker.io
+```
+E:Unable to locate package docker.io
+```
 
 则先执行再安装
 
-    sudo apt-get update
+```
+sudo apt-get update
+```
 
 2.下载Vivado 2018.1的Docker下镜像（预留至少35GB）（该文件的下载[链接](https://github.com/z4yx/NaiveMIPS-HDL/install-vivado-image.sh)）
 
-    ./install-vivado-image.sh
+```
+./install-vivado-image.sh
+```
 
 如果出现错误
 
-    bash: ./install-vivado-image.sh: Permission denied
+```
+bash: ./install-vivado-image.sh: Permission denied
+```
 
 则先执行再下载
 
-    chmod u+x install-vivado-image.sh
+```
+chmod u+x install-vivado-image.sh
+```
 
 3.编译
 
-    git clone https://github.com/z4yx/NaiveMIPS-HDL.git
-	cd NaiveMIPS-HDL
-	# building process takes about one hour
-	docker run -ti --rm -v $PWD:/home/vivado/project vivado:2018.1 /opt/Xilinx/Vivado/2018.1/bin/vivado -mode tcl -source xilinx/NaiveMIPS/build.tcl xilinx/NaiveMIPS/PrjVivao.xpr
+```
+git clone https://github.com/z4yx/NaiveMIPS-HDL.git
+cd NaiveMIPS-HDL
+# building process takes about one hour
+docker run -ti --rm -v $PWD:/home/vivado/project vivado:2018.1 /opt/Xilinx/Vivado/2018.1/bin/vivado -mode tcl -source xilinx/NaiveMIPS/build.tcl xilinx/NaiveMIPS/PrjVivao.xpr
+```
 
 4.打开界面
 
-    sudo docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v $PWD:/home/vivado/project vivado:2018.1
+```
+sudo docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v $PWD:/home/vivado/project vivado:2018.1
+```
+
+
 
