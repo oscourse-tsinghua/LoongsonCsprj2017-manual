@@ -95,7 +95,7 @@ vivado压缩包大小为20个G上下，可以在Windows系统下解后再复制�
 
 进入到安装包目录中，右键使用Terminal打开。
 
-输入命令`chmod -R a+x *`获取安装权限，
+输入命令`chmod -R +x xsetup` 获取安装权限，
 
 输入命令`./xsetup`进入安装
 
@@ -103,9 +103,7 @@ vivado压缩包大小为20个G上下，可以在Windows系统下解后再复制�
 
 3.打开软件
 
-安装完成后（默认装在opt文件夹之中）
-
-在Terminal回到根目录，使用指令"sudo sh /opt/Xilinx/Vivado/2017.1/bin/vivado”打开软件，或者进入到bin目录下，用“./vivado”命令打开
+安装完成后，在Terminal回到目录，进入到bin目录下，用“./vivado”命令打开
 
 # 二. Ubuntu系统下的安装（方法二）
 
